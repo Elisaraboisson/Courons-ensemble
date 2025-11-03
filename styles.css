@@ -1,0 +1,136 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #f8faff;
+  background: #0a2243;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1600&q=80'); /* TONS BLEUS, course mixte */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px) brightness(0.6);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background: rgba(16, 44, 82, 0.7);
+  border-bottom: 1px solid #3f8fbe;
+}
+
+h1 {
+  font-size: 2.7rem;
+  color: #78bcf9;
+  margin-bottom: 0.2em;
+}
+
+.slogan {
+  font-size: 1.3rem;
+  color: #e4ecf7;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(24, 61, 114, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 40px #0a2243a5;
+}
+
+h2, h3 {
+  color: #c8e0fc;
+  margin-top: 0.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+  font-size: 1.05em;
+}
+
+.routes {
+  display: flex;
+  gap: 1em;
+  margin-top: 0.7em;
+}
+
+.routes span {
+  background: #78bcf9;
+  color: #0a2243;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  font-weight: 600;
+  filter: brightness(1.1);
+  box-shadow: 0 2px 8px #09335f44;
+  margin-right: 0.5em;
+}
+
+.map-container {
+  margin-top: 1.3em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px #0a224388;
+  background: rgba(16, 44, 82, 0.5);
+  padding: 0.5em;
+}
+
+.free {
+  font-size: 1.25em;
+  color: #fddf7e;
+  margin-top: 0.7em;
+}
+
+.contacts {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.insta-link img {
+  vertical-align: middle;
+  border-radius: 6px;
+  border: 1px solid #ffb1ed21;
+  box-shadow: 0 1px 6px #78bcf944;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  background: rgba(16, 44, 82, 0.65);
+  color: #a7c8ea;
+  font-size: 0.95em;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  main {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  h1 { font-size: 2rem; }
+  .map-container iframe { height: 140px; }
+}
