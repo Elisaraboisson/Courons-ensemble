@@ -10,7 +10,7 @@ body, html {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -1;
-  background-image: url('image course.webp'); /* TONS BLEUS, course mixte */
+  background-image: url('https://github.com/Elisaraboisson/Courons-ensemble/blob/8e13adb6bf37fc6780640b69a9f31eca43a0e705/image%20course.webp'); /* TONS BLEUS, course mixte */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
